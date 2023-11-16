@@ -1,0 +1,106 @@
+$global-font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+$global-font-size: 20px;
+$global-color: #274562;
+$container-max-width: 1600px;
+$global-emphasis-color: #274562;
+$base-heading-font-family: 'Bebas Neue Pro', Arial, Helvetica, sans-serif;
+$base-heading-font-weight: 700;
+$subnav-margin-horizontal: 0;
+$subnav-item-color: #B1C3CF;
+$button-font-size: 24px;
+$button-line-height: 1;
+$button-default-background: transparent;
+$button-default-color: #274562;
+$button-default-hover-background:  #274562;
+$button-default-hover-color: #FFF;
+$button-default-active-background:  #274562;
+$button-default-active-color: #FFF;
+$lightbox-background: rgba(#000, 0.3);
+
+@import "theme/fonts";
+@import "../node_modules/uikit/src/scss/variables-theme.scss";
+@import "../node_modules/uikit/src/scss/mixins-theme.scss";
+
+
+@mixin hook-subnav-pill-item {
+  text-transform: none;
+  padding: 8px 16px;
+}
+@mixin hook-subnav-pill-item-hover {
+  background-color: transparent;
+}
+@mixin hook-subnav-pill-item-onclick {
+  color: #FFF;
+  background-color: #274562;
+}
+@mixin hook-subnav-pill-item-active {
+  color: #FFF;
+  background-color: #274562;
+}
+
+
+@mixin hook-button-default {
+  padding: 12px 42px;
+  font-family:'Bebas Neue Pro', Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  border: 1px solid;
+
+
+}
+@import "../node_modules/uikit/src/scss/uikit-theme.scss";
+
+.section-location {
+  margin: 197px 0;
+  padding-left: (160/1920*100vw);
+  .uk-grid {
+    gap: 40px;
+  }
+  .content {
+    flex: 0 0 percentage(537/1777);
+    max-width: percentage(537/1777);
+    display: flex;
+    flex-direction: column;
+    .uk-switcher {
+      margin-top: 32px;
+      margin-bottom: 0;
+      display: flex;
+      flex-direction: column;
+      flex: 1 0 0%;
+      .uk-active {
+        display: flex;
+        flex-direction: column;
+        flex: 1 0 0%;
+      }
+    }
+  }
+  .title {
+    font-size: 68px;
+    line-height: 100%;
+    letter-spacing: 0.68px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  .uk-subnav {
+    margin: 32px 0 0;
+  }
+  .slider {
+    flex: 1 0 0%;
+  }
+  [uk-lightbox] {
+    margin-top: 32px;
+    flex: 1 0 0%;
+    display: flex;
+    align-items: flex-end;
+  }
+  .slider-box {
+    position: relative;
+  }
+  .uk-slideshow-nav {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    width: 100%;
+  }
+
+}

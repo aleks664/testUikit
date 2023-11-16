@@ -1,0 +1,16 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+dependencies:
+  uikit:
+    specifier: ^3.17.9
+    version: 3.17.9
+
+packages:
+
+  /uikit@3.17.9:
+    resolution: {integrity: sha512-TvWVBBByHrzlzFHvFF8x5PCx9UAa+sWl+TjePRvVRM+p7DzQsV7HZ0wfqo9DYl2BRwZPHlOTqH1diYn7gFpktQ==}
+    dev: false
